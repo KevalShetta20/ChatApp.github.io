@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#73d7ff</color>
+    <color name="colorPrimaryDark">#ff0000</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="hintColor">#000000</color>
+    <color name="successGreen">#66cc00</color>
+    <color name="selected_filter">#221f20</color>
+    <color name="normal_filter">#8a8889</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorDivider">#bdbdbd</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorSmily">#ffffff</color>
+</resources>

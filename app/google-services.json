@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "511552074939",
+    "firebase_url": "https://chat-app-d45e3-default-rtdb.firebaseio.com",
+    "project_id": "chat-app-d45e3",
+    "storage_bucket": "chat-app-d45e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511552074939:android:adfb6c2481bed8e47de59e",
+        "android_client_info": {
+          "package_name": "com.kevalshetta.buddiesgram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511552074939-m11c5fc6a1osaogc520pb7huessnis1n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1I2LmTjG0-M_pm4rxXahADTAhAu7kLjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "511552074939-m11c5fc6a1osaogc520pb7huessnis1n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

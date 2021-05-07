@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kevalshetta.ChatApp.GroupCreateActivity">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/group_toolbar"/>
+
+    <ScrollView
+        android:layout_below="@id/group_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/group_scroll"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/group_image"
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/profile"
+                app:civ_border_width="2.5dp"
+                app:civ_border_color="#7F00F0"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:id="@+id/group_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Group Name"
+                android:layout_below="@id/group_image"
+                android:textSize="22sp"
+                android:padding="12dp"
+                android:layout_marginTop="50dp"
+                android:textColorHint="@color/hintColor"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/inputs"
+                android:drawableLeft="@drawable/caption"/>
+
+            <EditText
+                android:id="@+id/group_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:maxLines="10"
+                android:textSize="22sp"
+                android:padding="12dp"
+                android:hint="Group Description"
+                android:inputType="textMultiLine|textCapSentences"
+                android:textColorHint="@color/hintColor"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/inputs"
+                android:layout_below="@id/group_title"/>
+
+            <Button
+                android:id="@+id/group_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/group_description"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="35dp"
+                android:text="Save"
+                android:enabled="false"
+                android:background="@drawable/buttons"
+                android:padding="20dp"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

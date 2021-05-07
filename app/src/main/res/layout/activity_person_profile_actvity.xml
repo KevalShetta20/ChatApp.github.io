@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.kevalshetta.ChatApp.PersonProfileActvity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/friends_profile_image"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/profile"
+                app:civ_border_width="3dp"
+                android:scaleType="centerCrop"
+                app:civ_border_color="#800080"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/friends_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/display"
+                android:hint="Full Name"
+                android:gravity="center"
+                android:layout_below="@id/friends_profile_image"
+                android:padding="20dp"
+                android:textColorHint="@color/hintColor"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textSize="22sp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+            <EditText
+                android:id="@+id/friends_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/display"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Caption..."
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/friends_fullname"
+                android:inputType="textMultiLine"
+                android:padding="15dp"
+                android:textColorHint="@color/hintColor"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/setup_profile_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:layout_below="@id/friends_description"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/send_friend_request"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:text="Send Friend Request"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textColor="#fff"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/send_request"/>
+
+                <Button
+                    android:id="@+id/decline_friend_request"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:text="Decline Friend Request"
+                    android:textSize="16sp"
+                    android:padding="15dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/decline_friend_request"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

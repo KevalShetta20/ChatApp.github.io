@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kevalshetta.buddiesgram">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo_round"
+        android:label="KD ChatApp"
+        android:roundIcon="@mipmap/app_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.kevalshetta.ChatApp.GroupParticipantAddActivity"></activity>
+        <activity android:name="com.kevalshetta.ChatApp.GroupChatActivity" />
+        <activity android:name="com.kevalshetta.ChatApp.GroupCreateActivity" />
+        <activity android:name="com.kevalshetta.ChatApp.ImageViewerActivity" />
+        <activity
+            android:name="com.kevalshetta.ChatApp.ChatActivity"
+            android:parentActivityName="com.kevalshetta.ChatApp.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kevalshetta.ChatApp.PersonProfileActvity"
+            android:parentActivityName="com.kevalshetta.ChatApp.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kevalshetta.ChatApp.FindFriendsActivity"
+            android:parentActivityName="com.kevalshetta.ChatApp.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kevalshetta.ChatApp.ProfileActivity"
+            android:parentActivityName="com.kevalshetta.ChatApp.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kevalshetta.ChatApp.SettingsActivity"
+            android:parentActivityName="com.kevalshetta.ChatApp.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kevalshetta.ChatApp.VerificationOTPActivity"
+            android:parentActivityName="com.kevalshetta.ChatApp.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kevalshetta.ChatApp.SendOTPActivity"
+            android:parentActivityName="com.kevalshetta.ChatApp.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kevalshetta.ChatApp.SetupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kevalshetta.ChatApp.ForgotActivity"
+            android:parentActivityName="com.kevalshetta.ChatApp.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kevalshetta.ChatApp.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kevalshetta.ChatApp.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kevalshetta.ChatApp.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"
+            tools:ignore="MissingClass" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+    </application>
+
+</manifest>

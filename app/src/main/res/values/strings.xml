@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">BuddiesGram</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    Facebook-->
+    <string name="facebook_app_id">294787575399275</string>
+    <string name="fb_login_protocol_scheme">fb294787575399275</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="_91">+91-</string>
+    <string name="_1234567890">1234567890</string>
+    <string name="phone_verification">Phone Verification</string>
+    <string name="we_will_send_you_a_verification_code_on_this_below_phone_number">We will send you a verification code on this below phone number</string>
+    <string name="mobile_number">Mobile Number</string>
+
+    <string-array name="captions">
+        <item>Home</item>
+        <item>Profile</item>
+        <item>Menu</item>
+        <item>Work</item>
+    </string-array>
+
+</resources>
